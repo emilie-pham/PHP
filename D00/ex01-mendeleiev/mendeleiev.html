@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>mendeleïev</title>
+		<style>
+			body {
+				font-family: Arial;
+			}
+			table {
+				margin: auto;
+				width:100%;
+			}
+			h1 {
+				text-align: center;
+				font-size: 50px;
+			}
+			td {
+				border: solid 2px;
+			}
+			.atomic_mass {
+				text-align: right;
+				font-size: 15px;
+			}
+			.symbol {
+				text-align: center;
+				font-weight: bold;
+				font-size: 30px;
+			}
+			.element_nb {
+				text-align: left;
+				font-size: 15px;
+				position: relative;
+				bottom: 0px;
+			}
+			.empty {
+				border: none;
+			}
+			.non_metaux {
+				background-color: #e6e6e6;
+			}
+			.alcalins {
+				background-color: #ffb3b3;
+			}
+			.alcalino_terreux {
+				background-color: #ffd9b3;
+			}
+			.lanthanides {
+				background-color: #ffbf80;
+			}
+			.actinides {
+				background-color: #ffdf80;
+			}
+			.transition {
+				background-color: #ffffb3;
+			}
+			.pauvre {
+				background-color: #c6ffb3;
+			}
+			.metalloides {
+				background-color: #b3ffd9;
+			}
+			.halogenes {
+				background-color: #b3ecff;
+			}
+			.gaz_nobles {
+				background-color: #b3b3ff;
+			}
+			img {
+				display: block;
+				margin-right: auto;
+				margin-left: auto;
+				/*float: left;*/
+			}
+		</style>
+	</head>
+	<body contenteditable="true">
+		<h1>Tableau périodique des éléments</h1><img src="https://www.courrierinternational.com/sites/ci_master/files/styles/image_original_1280/public/assets/images/gettyimages-89858309-w.jpg?itok=5IAKNc9B" width="10%">
+		<table>
+			<tr>
+				<td class="non_metaux"><p class="atomic_mass">1.01</p><br><p class="symbol">H</p><br><p class="element_nb">1</p></td>
+				<td colspan="16" class="empty"></td>
+				<td class="gaz_nobles"><p class="atomic_mass">4.00</p><br><p class="symbol">He</p><br><p class="element_nb">2</p></td>
+			</tr>
+			<tr>
+				<td class="alcalins"><p class="atomic_mass">6.94</p><br><p class="symbol">Li</p><br><p class="element_nb">3</p></td>
+				<td class="alcalino_terreux"><p class="atomic_mass">9.01</p><br><p class="symbol">Be</p><br><p class="element_nb">4</p></td>
+				<td colspan="10" class="empty"></td>
+				<td class="metalloides"><p class="atomic_mass">10.81</p><br><p class="symbol">B</p><br><p class="element_nb">5</p></td>
+				<td class="non_metaux"><p class="atomic_mass">12.01</p><br><p class="symbol">C</p><br><p class="element_nb">6</p></td>
+				<td class="non_metaux"><p class="atomic_mass">14.01</p><br><p class="symbol">N</p><br><p class="element_nb">7</p></td>
+				<td class="non_metaux"><p class="atomic_mass">15.99</p><br><p class="symbol">O</p><br><p class="element_nb">8</p></td>
+				<td class="halogenes"><p class="atomic_mass">18.99</p><br><p class="symbol">F</p><br><p class="element_nb">9</p></td>
+				<td class="gaz_nobles"><p class="atomic_mass">20.17</p><br><p class="symbol">Ne</p><br><p class="element_nb">10</p></td>
+			</tr>
+			<tr>
+				<td class="alcalins"><p class="atomic_mass">22.99</p><br><p class="symbol">Na</p><br><p class="element_nb">11</p></td>
+				<td class="alcalino_terreux"><p class="atomic_mass">24.31</p><br><p class="symbol">Mg</p><br><p class="element_nb">12</p></td>
+				<td colspan="10" class="empty"></td>
+				<td class="pauvre"><p class="atomic_mass">26.98</p><br><p class="symbol">Al</p><br><p class="element_nb">13</p></td>
+				<td class="metalloides"><p class="atomic_mass">28.09</p><br><p class="symbol">Si</p><br><p class="element_nb">14</p></td>
+				<td class="non_metaux"><p class="atomic_mass">30.97</p><br><p class="symbol">P</p><br><p class="element_nb">15</p></td>
+				<td class="non_metaux"><p class="atomic_mass">32.07</p><br><p class="symbol">S</p><br><p class="element_nb">16</p></td>
+				<td class="halogenes"><p class="atomic_mass">35.45</p><br><p class="symbol">Cl</p><br><p class="element_nb">17</p></td>
+				<td class="gaz_nobles"><p class="atomic_mass">39.95</p><br><p class="symbol">Ar</p><br><p class="element_nb">18</p></td>
+			</tr>
+			<tr>
+				<td class="alcalins"><p class="atomic_mass">39.10</p><br><p class="symbol">K</p><br><p class="element_nb">19</p></td>
+				<td class="alcalino_terreux"><p class="atomic_mass">40.08</p><br><p class="symbol">Ca</p><br><p class="element_nb">20</p></td>
+				<td class="transition"><p class="atomic_mass">44.96</p><br><p class="symbol">Sc</p><br><p class="element_nb">21</p></td>
+				<td class="transition"><p class="atomic_mass">47.87</p><br><p class="symbol">Ti</p><br><p class="element_nb">22</p></td>
+				<td class="transition"><p class="atomic_mass">50.94</p><br><p class="symbol">V</p><br><p class="element_nb">23</p></td>
+				<td class="transition"><p class="atomic_mass">51.99</p><br><p class="symbol">Cr</p><br><p class="element_nb">24</p></td>
+				<td class="transition"><p class="atomic_mass">54.94</p><br><p class="symbol">Mn</p><br><p class="element_nb">25</p></td>
+				<td class="transition"><p class="atomic_mass">55.85</p><br><p class="symbol">Fe</p><br><p class="element_nb">26</p></td>
+				<td class="transition"><p class="atomic_mass">58.93</p><br><p class="symbol">Co</p><br><p class="element_nb">27</p></td>
+				<td class="transition"><p class="atomic_mass">58.69</p><br><p class="symbol">Ni</p><br><p class="element_nb">28</p></td>
+				<td class="transition"><p class="atomic_mass">63.55</p><br><p class="symbol">Cu</p><br><p class="element_nb">29</p></td>
+				<td class="transition"><p class="atomic_mass">65.38</p><br><p class="symbol">Zn</p><br><p class="element_nb">30</p></td>
+				<td class="pauvre"><p class="atomic_mass">69.72</p><br><p class="symbol">Ga</p><br><p class="element_nb">31</p></td>
+				<td class="metalloides"><p class="atomic_mass">72.63</p><br><p class="symbol">Ge</p><br><p class="element_nb">32</p></td>
+				<td class="metalloides"><p class="atomic_mass">74.92</p><br><p class="symbol">As</p><br><p class="element_nb">33</p></td>
+				<td class="non_metaux"><p class="atomic_mass">78.97</p><br><p class="symbol">Se</p><br><p class="element_nb">34</p></td>
+				<td class="halogenes"><p class="atomic_mass">79.90</p><br><p class="symbol">Br</p><br><p class="element_nb">35</p></td>
+				<td class="gaz_nobles"><p class="atomic_mass">83.80</p><br><p class="symbol">Kr</p><br><p class="element_nb">36</p></td>
+			</tr>
+			<tr>
+				<td class="alcalins"><p class="atomic_mass">85.47</p><br><p class="symbol">Rb</p><br><p class="element_nb">37</p></td>
+				<td class="alcalino_terreux"><p class="atomic_mass">87.62</p><br><p class="symbol">Sr</p><br><p class="element_nb">38</p></td>
+				<td class="transition"><p class="atomic_mass">88.90</p><br><p class="symbol">Y</p><br><p class="element_nb">39</p></td>
+				<td class="transition"><p class="atomic_mass">91.22</p><br><p class="symbol">Zr</p><br><p class="element_nb">40</p></td>
+				<td class="transition"><p class="atomic_mass">92.91</p><br><p class="symbol">Nb</p><br><p class="element_nb">41</p></td>
+				<td class="transition"><p class="atomic_mass">95.95</p><br><p class="symbol">Mo</p><br><p class="element_nb">42</p></td>
+				<td class="transition"><p class="atomic_mass">98</p><br><p class="symbol">Tc</p><br><p class="element_nb">43</p></td>
+				<td class="transition"><p class="atomic_mass">101.07</p><br><p class="symbol">Ru</p><br><p class="element_nb">44</p></td>
+				<td class="transition"><p class="atomic_mass">102.91</p><br><p class="symbol">Rh</p><br><p class="element_nb">45</p></td>
+				<td class="transition"><p class="atomic_mass">106.42</p><br><p class="symbol">Pd</p><br><p class="element_nb">46</p></td>
+				<td class="transition"><p class="atomic_mass">107.87</p><br><p class="symbol">Ag</p><br><p class="element_nb">47</p></td>
+				<td class="transition"><p class="atomic_mass">112.41</p><br><p class="symbol">Cd</p><br><p class="element_nb">48</p></td>
+				<td class="pauvre"><p class="atomic_mass">114.82</p><br><p class="symbol">In</p><br><p class="element_nb">49</p></td>
+				<td class="pauvre"><p class="atomic_mass">118.71</p><br><p class="symbol">Sn</p><br><p class="element_nb">50</p></td>
+				<td class="metalloides"><p class="atomic_mass">121.76</p><br><p class="symbol">Sb</p><br><p class="element_nb">51</p></td>
+				<td class="metalloides"><p class="atomic_mass">127.60</p><br><p class="symbol">Te</p><br><p class="element_nb">52</p></td>
+				<td class="halogenes"><p class="atomic_mass">126.90</p><br><p class="symbol">I</p><br><p class="element_nb">53</p></td>
+				<td class="gaz_nobles"><p class="atomic_mass">131.29</p><br><p class="symbol">Xe</p><br><p class="element_nb">54</p></td>
+			</tr>
+			<tr>
+				<td class="alcalins"><p class="atomic_mass">132.91</p><br><p class="symbol">Cs</p><br><p class="element_nb">55</p></td>
+				<td class="alcalino_terreux"><p class="atomic_mass">137.33</p><br><p class="symbol">Ba</p><br><p class="element_nb">56</p></td>
+				<td class="lanthanides"><p class="atomic_mass"></p><br><p class="symbol"></p><br><p class="element_nb">57 - 71</p></td>
+				<td class="transition"><p class="atomic_mass">178.49</p><br><p class="symbol">Hf</p><br><p class="element_nb">72</p></td>
+				<td class="transition"><p class="atomic_mass">180.95</p><br><p class="symbol">Ta</p><br><p class="element_nb">73</p></td>
+				<td class="transition"><p class="atomic_mass">183.84</p><br><p class="symbol">W</p><br><p class="element_nb">74</p></td>
+				<td class="transition"><p class="atomic_mass">186.21</p><br><p class="symbol">Re</p><br><p class="element_nb">75</p></td>
+				<td class="transition"><p class="atomic_mass">190.23</p><br><p class="symbol">Os</p><br><p class="element_nb">76</p></td>
+				<td class="transition"><p class="atomic_mass">192.22</p><br><p class="symbol">Ir</p><br><p class="element_nb">77</p></td>
+				<td class="transition"><p class="atomic_mass">195.08</p><br><p class="symbol">Pt</p><br><p class="element_nb">78</p></td>
+				<td class="transition"><p class="atomic_mass">196.97</p><br><p class="symbol">Au</p><br><p class="element_nb">79</p></td>
+				<td class="transition"><p class="atomic_mass">200.59</p><br><p class="symbol">Hg</p><br><p class="element_nb">80</p></td>
+				<td class="pauvre"><p class="atomic_mass">204.38</p><br><p class="symbol">Tl</p><br><p class="element_nb">81</p></td>
+				<td class="pauvre"><p class="atomic_mass">207.2</p><br><p class="symbol">Pb</p><br><p class="element_nb">82</p></td>
+				<td class="pauvre"><p class="atomic_mass">208.98</p><br><p class="symbol">Bi</p><br><p class="element_nb">83</p></td>
+				<td class="metalloides"><p class="atomic_mass">209</p><br><p class="symbol">Po</p><br><p class="element_nb">84</p></td>
+				<td class="halogenes"><p class="atomic_mass">210</p><br><p class="symbol">At</p><br><p class="element_nb">85</p></td>
+				<td class="gaz_nobles"><p class="atomic_mass">222</p><br><p class="symbol">Rn</p><br><p class="element_nb">86</p></td>
+			</tr>
+			<tr>
+				<td class="alcalins"><p class="atomic_mass">223</p><br><p class="symbol">Fr</p><br><p class="element_nb">87</p></td>
+				<td class="alcalino_terreux"><p class="atomic_mass">226</p><br><p class="symbol">Ra</p><br><p class="element_nb">88</p></td>
+				<td class="actinides"><p class="atomic_mass"></p><br><p class="symbol"></p><br><p class="element_nb">89 - 103</p></td>
+				<td class="transition"><p class="atomic_mass">267</p><br><p class="symbol">Rf</p><br><p class="element_nb">104</p></td>
+				<td class="transition"><p class="atomic_mass">268</p><br><p class="symbol">Db</p><br><p class="element_nb">105</p></td>
+				<td class="transition"><p class="atomic_mass">269</p><br><p class="symbol">Sg</p><br><p class="element_nb">106</p></td>
+				<td class="transition"><p class="atomic_mass">270</p><br><p class="symbol">Bh</p><br><p class="element_nb">107</p></td>
+				<td class="transition"><p class="atomic_mass">277</p><br><p class="symbol">Hs</p><br><p class="element_nb">108</p></td>
+				<td class="transition"><p class="atomic_mass">278</p><br><p class="symbol">Mt</p><br><p class="element_nb">109</p></td>
+				<td class="transition"><p class="atomic_mass">281</p><br><p class="symbol">Ds</p><br><p class="element_nb">110</p></td>
+				<td class="transition"><p class="atomic_mass">282</p><br><p class="symbol">Rg</p><br><p class="element_nb">111</p></td>
+				<td class="transition"><p class="atomic_mass">285</p><br><p class="symbol">Cn</p><br><p class="element_nb">112</p></td>
+				<td class="pauvre"><p class="atomic_mass">286</p><br><p class="symbol">Nh</p><br><p class="element_nb">113</p></td>
+				<td class="pauvre"><p class="atomic_mass">289</p><br><p class="symbol">Fl</p><br><p class="element_nb">114</p></td>
+				<td class="pauvre"><p class="atomic_mass">289</p><br><p class="symbol">Mc</p><br><p class="element_nb">115</p></td>
+				<td class="pauvre"><p class="atomic_mass">293</p><br><p class="symbol">Lv</p><br><p class="element_nb">116</p></td>
+				<td class="halogenes"><p class="atomic_mass">294</p><br><p class="symbol">Ts</p><br><p class="element_nb">117</p></td>
+				<td class="gaz_nobles"><p class="atomic_mass">294</p><br><p class="symbol">Og</p><br><p class="element_nb">118</p></td>
+			</tr>
+			<tr>
+				<td class="empty"><br></td>
+			</tr>
+			<tr>
+				<td colspan="3" class="empty"></td>
+				<td class="lanthanides"><p class="atomic_mass">138.90</p><br><p class="symbol">La</p><br><p class="element_nb">57</p></td>
+				<td class="lanthanides"><p class="atomic_mass">140.12</p><br><p class="symbol">Ce</p><br><p class="element_nb">58</p></td>
+				<td class="lanthanides"><p class="atomic_mass">140.91</p><br><p class="symbol">Pr</p><br><p class="element_nb">59</p></td>
+				<td class="lanthanides"><p class="atomic_mass">144.24</p><br><p class="symbol">Nd</p><br><p class="element_nb">60</p></td>
+				<td class="lanthanides"><p class="atomic_mass">145</p><br><p class="symbol">Pm</p><br><p class="element_nb">61</p></td>
+				<td class="lanthanides"><p class="atomic_mass">150.36</p><br><p class="symbol">Sm</p><br><p class="element_nb">62</p></td>
+				<td class="lanthanides"><p class="atomic_mass">151.96</p><br><p class="symbol">Eu</p><br><p class="element_nb">63</p></td>
+				<td class="lanthanides"><p class="atomic_mass">157.25</p><br><p class="symbol">Gd</p><br><p class="element_nb">64</p></td>
+				<td class="lanthanides"><p class="atomic_mass">158.93</p><br><p class="symbol">Tb</p><br><p class="element_nb">65</p></td>
+				<td class="lanthanides"><p class="atomic_mass">162.50</p><br><p class="symbol">Dy</p><br><p class="element_nb">66</p></td>
+				<td class="lanthanides"><p class="atomic_mass">164.93</p><br><p class="symbol">Ho</p><br><p class="element_nb">67</p></td>
+				<td class="lanthanides"><p class="atomic_mass">167.26</p><br><p class="symbol">Er</p><br><p class="element_nb">68</p></td>
+				<td class="lanthanides"><p class="atomic_mass">168.93</p><br><p class="symbol">Tm</p><br><p class="element_nb">69</p></td>
+				<td class="lanthanides"><p class="atomic_mass">173.04</p><br><p class="symbol">Yb</p><br><p class="element_nb">70</p></td>
+				<td class="lanthanides"><p class="atomic_mass">174.97</p><br><p class="symbol">Lu</p><br><p class="element_nb">71</p></td>
+			</tr>
+			<tr>
+				<td colspan="3" class="empty"></td>
+				<td class="actinides"><p class="atomic_mass">227</p><br><p class="symbol">Ac</p><br><p class="element_nb">89</p></td>
+				<td class="actinides"><p class="atomic_mass">232.04</p><br><p class="symbol">Th</p><br><p class="element_nb">90</p></td>
+				<td class="actinides"><p class="atomic_mass">231.03</p><br><p class="symbol">Pa</p><br><p class="element_nb">91</p></td>
+				<td class="actinides"><p class="atomic_mass">238.03</p><br><p class="symbol">U</p><br><p class="element_nb">92</p></td>
+				<td class="actinides"><p class="atomic_mass">237</p><br><p class="symbol">Np</p><br><p class="element_nb">93</p></td>
+				<td class="actinides"><p class="atomic_mass">244</p><br><p class="symbol">Pu</p><br><p class="element_nb">94</p></td>
+				<td class="actinides"><p class="atomic_mass">243</p><br><p class="symbol">Am</p><br><p class="element_nb">95</p></td>
+				<td class="actinides"><p class="atomic_mass">247</p><br><p class="symbol">Cm</p><br><p class="element_nb">96</p></td>
+				<td class="actinides"><p class="atomic_mass">247</p><br><p class="symbol">Bk</p><br><p class="element_nb">97</p></td>
+				<td class="actinides"><p class="atomic_mass">251</p><br><p class="symbol">Cf</p><br><p class="element_nb">98</p></td>
+				<td class="actinides"><p class="atomic_mass">252</p><br><p class="symbol">Es</p><br><p class="element_nb">99</p></td>
+				<td class="actinides"><p class="atomic_mass">257</p><br><p class="symbol">Fm</p><br><p class="element_nb">100</p></td>
+				<td class="actinides"><p class="atomic_mass">258</p><br><p class="symbol">Md</p><br><p class="element_nb">101</p></td>
+				<td class="actinides"><p class="atomic_mass">259</p><br><p class="symbol">No</p><br><p class="element_nb">102</p></td>
+				<td class="actinides"><p class="atomic_mass">266</p><br><p class="symbol">Lr</p><br><p class="element_nb">103</p></td>
+			</tr>
+		</table>
+	</body>
+</html>
