@@ -1,0 +1,74 @@
+body {
+	font-family: Arial;
+}
+table {
+	margin: auto;
+	width: 90vw;
+	height: 10vh;
+}
+h1 {
+	text-align: center;
+	font-size: 50px;
+}
+td {
+	border: solid 2px;
+	width: 100vw;
+	height: 10vh;
+}
+tr{
+	width: 100vw;
+	height: 10vh;
+}
+.atomic_mass {
+	text-align: right;
+	font-size: 15px;
+}
+.symbol {
+	text-align: center;
+	font-weight: bold;
+	font-size: 30px;
+}
+.element_nb {
+	text-align: left;
+	font-size: 15px;
+	position: relative;
+	bottom: 0px;
+}
+.empty {
+	border: none;
+}
+.non_metaux {
+	background-color: #e6e6e6;
+}
+.alcalins {
+	background-color: #ffb3b3;
+}
+.alcalino_terreux {
+	background-color: #ffd9b3;
+}
+.lanthanides {
+	background-color: #ffbf80;
+}
+.actinides {
+	background-color: #ffdf80;
+}
+.transition {
+	background-color: #ffffb3;
+}
+.pauvre {
+	background-color: #c6ffb3;
+}
+.metalloides {
+	background-color: #b3ffd9;
+}
+.halogenes {
+	background-color: #b3ecff;
+}
+.gaz_nobles {
+	background-color: #b3b3ff;
+}
+img {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
