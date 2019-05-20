@@ -1,36 +1,33 @@
 body {
 	font-family: Arial;
 }
-table {
-	margin: auto;
-	width: 90vw;
-	height: 10vh;
-}
 h1 {
 	text-align: center;
-	font-size: 50px;
+	font-size: 2vw;
 }
+
+table {
+	margin: auto;
+    width:95%;
+    line-height: 0.1vh; 
+}
+
 td {
-	border: solid 2px;
-	width: 100vw;
-	height: 10vh;
-}
-tr{
-	width: 100vw;
-	height: 10vh;
+    width:2%;
+    border: 1px solid black;
 }
 .atomic_mass {
 	text-align: right;
-	font-size: 15px;
+	font-size: 1vmin;
 }
 .symbol {
 	text-align: center;
 	font-weight: bold;
-	font-size: 30px;
+	font-size: 2vmin;
 }
 .element_nb {
 	text-align: left;
-	font-size: 15px;
+	font-size: 1vmin;
 	position: relative;
 	bottom: 0px;
 }

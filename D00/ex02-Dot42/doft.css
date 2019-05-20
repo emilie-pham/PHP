@@ -6,16 +6,17 @@ body{
 
 * {
 	font-family: ‘Franklin Gothic Medium’, ‘Arial Narrow’, Arial, sans-serif;
-	font-size: 23px;
+	font-size: 1vw;
 }
 
-.image {
+.cluster {
 	width: 100%;
-	height: auto;
+	height: 100%;
 }
 
 .icon {
 	display: block;
+	margin-top: 5px;
 	margin-right: auto;
 	margin-left: auto;
 }
@@ -80,10 +81,9 @@ body{
 
 .left {
 	float: left;
-	/*padding: 5px;*/
 	width: 10%;
 	padding-top: 1%;
-	padding-bottom: 1%;
+	padding-bottom: 2.5%;
 	margin-left: 2%;
 	margin-right: 2%;
 	height: 50%;
@@ -121,14 +121,9 @@ body{
 
 /*TEXT FORMAT*/
 
-.text1 {
+.text {
 	margin-bottom: 0%;
 	width: 10vw;
-}
-
-.text2 {
-	margin-top: 0%;
-	margin-bottom: 0%;
 }
 
 .red-shadow {
@@ -143,9 +138,35 @@ form {
 
 input[type=text] {
 	margin-left: 2%;
-	width: 70%;
+	width: 20vw;
+	box-shadow: inset 1px 1px 2px 0.5px #f2f2f2;
+	background: #fff;
+}
+
+input[type=Submit] {
+	margin-left: 1%;
+	width: 5.5vw;
+	text-align: center;
 }
 
 .button {
 	background-color: #eeeeee;
+}
+
+/* LINKS */
+
+.apple{
+    position: absolute;
+    left: 66vw;
+    top: 29vw;
+    width: 9vw;
+    height: 7vw;
+}
+
+.ikea {
+    position: absolute;
+    left: 41vw;
+    top: 29vw;
+    width: 5vw;
+    height: 11vw;
 }
