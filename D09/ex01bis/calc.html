@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>It's over 9000!</title>
+		<meta charset="UTF-8">
+		<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+	</head>
+	<body>
+			<script>
+				$(document).ready(function(){
+					$("#button").click(function () {
+						var nb1 = $('#nb1').val();
+						var nb2 = $('#nb2').val();
+						var op = $('#op').val();
+						if (parseInt(nb1) == nb1 && parseInt(nb2) == nb2 && nb1 >= 0 && nb2 >= 0) {
+						nb1 = parseInt(nb1)
+						nb2 = parseInt(nb2)
+						switch (op) {
+							case '*':
+								result = nb1 * nb2;
+								break;
+							case '/':
+								if (nb2 == 0)
+									result = "It's over 9000!";
+								else 
+									result = nb1 / nb2;
+								break;
+							case '+':
+								result = nb1 + nb2;
+								break;
+							case '-':
+								result = nb1 - nb2;
+								break;
+							case '%':
+								if (nb2 == 0)
+									result = "It's over 9000!";
+								else 
+									result = nb1 % nb2;
+								break;
+							default :
+								result = 'Error :(';
+							}
+						}
+						else
+                        	result = 'Error :(';
+                   		alert(result);
+						console.log(result);
+					})
+					setInterval("alert('Please, use me...')", 30000);
+				})
+			</script>
+		<input id = 'nb1' type='text'>
+		<select id ='op'>
+				<option value="+">+</option>
+				<option value="-">-</option>
+				<option value="*">*</option>
+				<option value="/">/</option>
+				<option value="%">%</option>
+			  </select>
+		<input id ='nb2' type='text'>
+		<input id='button' type='submit' name='Try me!'>
+	</body>
+</html>

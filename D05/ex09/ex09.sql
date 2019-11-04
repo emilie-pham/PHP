@@ -1,0 +1,1 @@
+SELECT COUNT(title) AS `nb_short-films` FROM db_epham.film WHERE duration <= 42;

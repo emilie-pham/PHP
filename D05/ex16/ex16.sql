@@ -1,0 +1,1 @@
+SELECT COUNT(date_last_film) AS `movies` FROM db_epham.member WHERE (CAST(date_last_film AS DATE) > DATE('2006-10-30') AND CAST(date_last_film AS DATE) < DATE('2007-07-27')) OR CAST(date_last_film AS DATE) LIKE '%-12-24';

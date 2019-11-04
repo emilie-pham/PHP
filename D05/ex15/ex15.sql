@@ -1,0 +1,1 @@
+SELECT REVERSE(SUBSTRING(phone_number, 2, 9)) AS `rebmunenohp` FROM db_epham.distrib WHERE SUBSTRING(phone_number, 1, 2) = '05';

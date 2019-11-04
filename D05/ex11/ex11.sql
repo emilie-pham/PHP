@@ -1,0 +1,1 @@
+SELECT upper(users.last_name) as `NAME`, users.first_name, sub.price FROM db_epham.subscription AS sub JOIN db_epham.member AS mem JOIN db_epham.user_card AS users WHERE sub.id_sub = mem.id_sub AND sub.price > 42 AND mem.id_user_card = users.id_user ORDER BY users.last_name;

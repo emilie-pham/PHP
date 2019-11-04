@@ -1,0 +1,1 @@
+SELECT last_name, first_name, cast(birthdate AS date) AS birthdate FROM db_epham.user_card WHERE birthdate LIKE '%1989%' ORDER BY last_name;

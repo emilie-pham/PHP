@@ -1,0 +1,1 @@
+SELECT title AS `Title`, summary AS `Summary`, film.prod_year FROM db_epham.film WHERE `id_genre` = 25 ORDER BY `prod_year` DESC;

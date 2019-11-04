@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>calc</title>
+        <style>
+            input {
+                width: 50px;
+            }
+        </style>
+        <script>
+                var left;
+                var right;
+                var op;
+                var result;
+
+                function doop() {
+                    left = document.getElementById('left').value;
+                    right = document.getElementById('right').value;
+                    op = document.getElementById('op').value;
+
+                    if (parseInt(left) == left && parseInt(right) == right && left >= 0 && right >= 0) {
+                        switch(op) {
+                            case '+':
+                                result = parseInt(left) + parseInt(right);
+                                break;
+                            case '-':
+                                result = parseInt(left) - parseInt(right);
+                                break;
+                            case '*':
+                                result = parseInt(left) * parseInt(right);
+                                break;
+                            case '/':
+                                result = parseInt(left) / parseInt(right);
+                                if (right == 0)
+                                    result = "It's over 9000!";
+                                break;
+                            case '%':
+                                result = parseInt(left) % parseInt(right);
+                                if (right == 0)
+                                    result = "It's over 9000!";
+                                break;
+                            default:
+                                result = 'Error :(';
+                        }
+                    }
+                    else
+                        result = 'Error :(';
+                    alert(result);
+                    console.log(result);
+                }
+
+                setInterval("alert('Please, use me...')", 30000);
+        </script>
+    </head>
+    <body>
+        <input id="left" type="text" value=""/>
+        <select id="op">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+            <option value="%">%</option>
+        </select>
+        <input id="right" type="text" value=""/>
+        <input id="submit" type="submit" value="Try me!" onclick="doop();"/>
+    </body>
+</html>

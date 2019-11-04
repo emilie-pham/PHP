@@ -1,0 +1,1 @@
+SELECT title, summary FROM db_epham.film WHERE upper(summary) LIKE '%VINCENT%' ORDER BY id_film ASC;
